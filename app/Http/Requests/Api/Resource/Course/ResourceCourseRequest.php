@@ -13,6 +13,9 @@ class ResourceCourseRequest extends ResourceRequest
             'school' => ['nullable', 'integer', 'min:1'],
             'standard_calendar' => ['nullable', 'boolean'],
             'course' => ['nullable', 'integer', 'min:1'],
+            'hora_falta' => ['required', 'numeric', 'min:0'],
+            'qtd_etapas' => ['nullable', 'integer', 'min:0'],     
+            'carga_horaria' => ['nullable', 'numeric', 'min:0'], 
         ];
     }
 
@@ -23,6 +26,9 @@ class ResourceCourseRequest extends ResourceRequest
             'school' => 'Escola',
             'standard_calendar' => 'Sem Padrão Escolar',
             'course' => 'Curso',
+            'hora_falta' => 'Hora de falta', 
+            'qtd_etapas' => 'Quantidade de etapas',
+            'carga_horaria' => 'Carga horária',
         ];
     }
 }
